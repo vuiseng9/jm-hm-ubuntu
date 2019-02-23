@@ -21,6 +21,16 @@ cd jm-hm-ubuntu
 ./make.sh
 ```
 
+## Docker
+---
+```
+# build image
+cd docker; sudo docker build . -t jm-hm-ubuntu
+
+# run container
+cd docker; ./docker_run.sh
+```
+
 ### Run AVC Decode
 ```
 # AVC decode
@@ -34,6 +44,11 @@ vlc --demux h264 test_kendo_mvc.264
 
 ### Play decompressed stream in VLC
 vlc --demux rawvideo --rawvid-fps 30 --rawvid-height 768 --rawvid-width 1024 --rawvid-chroma I420 test_dec_ViewId0001.yuv
+
+### To run VLC as root, in docker for example, 
+### execute this line to replace geteuid to getppid in the vlc executable,
+### you may run the vlc as usual after that. 
+sed -i 's/geteuid/getppid/' /usr/bin/vlc
 
 # Utility - check stream info
 mediainfo test_kendo_mvc.264

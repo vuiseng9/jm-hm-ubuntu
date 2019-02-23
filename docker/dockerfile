@@ -1,0 +1,18 @@
+FROM ubuntu:16.04
+
+WORKDIR /workspace
+
+RUN apt-get update && \
+    apt-get install -y \
+    vim wget curl git \
+    build-essential \
+    qtcreator \
+    vlc \
+    mediainfo 
+
+RUN git clone https://github.com/vuiseng9/jm-hm-ubuntu.git && \
+    cd jm-hm-ubuntu && \
+    ./make.sh
+
+RUN sed -i 's/geteuid/getppid/' `which vlc`
+
