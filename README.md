@@ -22,7 +22,6 @@ cd jm-hm-ubuntu
 ```
 
 ## Docker
----
 ```
 # build image
 cd docker; sudo docker build . -t jm-hm-ubuntu
@@ -31,7 +30,7 @@ cd docker; sudo docker build . -t jm-hm-ubuntu
 cd docker; ./docker_run.sh
 ```
 
-### Run AVC Decode
+## Run AVC Decode
 ```
 # AVC decode
 cd JM/bin/
