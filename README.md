@@ -1,11 +1,11 @@
 # JM(AVC) / HM(HEVC) reference code in Ubuntu
 *Feb'19, vuiseng9*
 
-This repo intends to archive the process of bringing up **(1) H.264/AVC, JM** ; **(2) H.265/HEVC, HM** reference software in linux environment. 
+This repo intends to archive the process of setting up **(1) H.264/AVC, JM** ; **(2) H.265/HEVC, HM** reference software in linux environment. 
 
 ## Sources
 1. H.264/AVC JM 19.0 code has been downloaded from the author's [official site](http://iphome.hhi.de/suehring/tml/download/)
-2. H.265/HEVC HM code *- coming soon latest by this summer -* 
+2. H.265/HEVC HM revision 4995 *- coming soon latest by this summer -* 
 
 ## Validated Setup
 Ubuntu 16.04.5 LTS

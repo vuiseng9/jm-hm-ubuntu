@@ -1,4 +1,4 @@
-# Bringing up JM from upstream
+# Setting up JM from upstream
 ```
 wget http://iphome.hhi.de/suehring/tml/download/jm19.0.zip
 unzip jm19.0.zip && cd JM
