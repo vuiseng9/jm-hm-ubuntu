@@ -41,7 +41,7 @@ cd JM/bin/
 ### Play compressed stream in VLC
 vlc --demux h264 test_kendo_mvc.264
 
-### Play decompressed stream in VLC
+### Play raw frames in VLC
 vlc --demux rawvideo --rawvid-fps 30 --rawvid-height 768 --rawvid-width 1024 --rawvid-chroma I420 test_dec_ViewId0001.yuv
 
 ### To run VLC as root, in docker for example, 
